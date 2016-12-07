@@ -1,6 +1,6 @@
 {
   "name": "electron-express",
-  "description": "Electron + Express.js + WebSocket + msgpack",
+  "description": "Electron + Express.js + WebSocket + msgpack (Sample Application)",
   "version": "1.0.0",
   "author": "@kawanet",
   "bugs": {

@@ -1,4 +1,4 @@
-# electron-express - Electron + Express + WebSocket + msgpack
+# electron-express - Electron + Express + WebSocket + msgpack (Sample Application)
 
 1. Download the repository:
 
@@ -47,6 +47,10 @@ cd build && zip -yDr electron-express-win32-x64.zip electron-express-win32-x64
 ```
 
 ## SEE ALSO
+
+### Qiita
+
+- [http://qiita.com/kawanet/items/02ecf28f683e8972760d](http://qiita.com/kawanet/items/02ecf28f683e8972760d)
 
 ### GitHub
 
