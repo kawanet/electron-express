@@ -1,0 +1,62 @@
+/* home.css */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1em;
+}
+
+input, .log {
+    font-family: Courier, monospace;
+}
+
+.form form {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1em 0;
+}
+
+.form input {
+    font-size: 14px;
+    line-height: 20px;
+    border: 2px solid grey;
+    padding: 2px;
+}
+
+.form .name {
+    flex-grow: 0;
+    flex-basis: 10em;
+    width: 10em;
+}
+
+.form .message {
+    flex-grow: 1;
+    flex-basis: 40em;
+    width: 40em;
+    margin: 0 0.5em;
+}
+
+.form .submit {
+    flex-grow: 0;
+    flex-basis: 5em;
+    width: 5em;
+}
+
+.log ul {
+    padding: 0;
+    margin: 0;
+}
+
+.log li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.log li span {
+    padding-right: 0.5em;
+}
+

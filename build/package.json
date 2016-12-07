@@ -1,0 +1,14 @@
+{
+  "name": "electron-express-build",
+  "description": "Electron + WebSocket + Express",
+  "version": "1.0.0",
+  "author": "@kawanet",
+  "devDependencies": {
+    "electron": "^1.4.10",
+    "electron-packager": "^8.3.0",
+    "fixpack": "^2.3.1",
+    "jshint": "^2.9.4",
+    "strftime": "^0.9.2"
+  },
+  "license": "MIT"
+}

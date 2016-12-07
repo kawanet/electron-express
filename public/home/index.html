@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Electron + Express.js + WebSocket + msgpack</title>
+  <script src="../vendor/strftime-min.js"></script>
+  <script src="../vendor/msgpack.min.js"></script>
+  <script src="home.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body onload="init();">
+
+<div class="form">
+  <form onsubmit="return false;">
+    <input type="text" name="name" class="name" placeholder="name">
+    <input type="text" name="message" class="message" placeholder="message">
+    <input type="submit" class="submit" value="SEND">
+  </form>
+</div>
+
+<div class="log">
+  <ul></ul>
+</div>
+
+</body>
+</html>

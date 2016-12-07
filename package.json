@@ -1,0 +1,43 @@
+{
+  "name": "electron-express",
+  "description": "Electron + Express.js + WebSocket + msgpack",
+  "version": "1.0.0",
+  "author": "@kawanet",
+  "bugs": {
+    "url": "https://github.com/kawanet/electron-express/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "msgpack-lite": "^0.1.26",
+    "process.argv": "^0.1.0",
+    "ws": "^1.1.1"
+  },
+  "homepage": "https://github.com/kawanet/electron-express#readme",
+  "keywords": [
+    "electron",
+    "express",
+    "msgpack",
+    "websocket"
+  ],
+  "license": "MIT",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawanet/electron-express.git"
+  },
+  "scripts": {
+    "build-vendor": "cp -p node_modules/msgpack-lite/dist/msgpack.min.js build/node_modules/strftime/strftime-min.js public/vendor/",
+    "electron-dmg-darwin": "hdiutil create -srcfolder build/electron-express-darwin-x64/ build/electron-express-darwin-x64.dmg",
+    "electron-packager-darwin": "./build/node_modules/.bin/electron-packager . --overwrite --platform=darwin --arch=x64 --out=build --ignore=tmp/ --ignore=build/ --ignore=test/ --ignore=.idea/ --version=$(./build/node_modules/.bin/electron -v | cut -c 2-)",
+    "electron-packager-win32": "./build/node_modules/.bin/electron-packager . --overwrite --platform=win32 --arch=x64 --out=build --ignore=tmp/ --ignore=build/ --ignore=test/ --ignore=.idea/ --version=$(./build/node_modules/.bin/electron -v | cut -c 2-)",
+    "electron-zip-darwin": "cd build/*-darwin-x64 && zip -yDr ../electron-express-darwin-x64.zip .",
+    "electron-zip-win32": "cd build && zip -yDr electron-express-win32-x64.zip *-win32-x64",
+    "fixpack": "fixpack && cd build && fixpack",
+    "open": "open http://127.0.0.1:3000/home/",
+    "start-electron": "./build/node_modules/.bin/electron ./main.js",
+    "start-node": "./server.js --port=3000",
+    "test": "./build/node_modules/.bin/jshint *.js* lib"
+  }
+}

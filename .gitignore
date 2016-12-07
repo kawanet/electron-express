@@ -1,0 +1,11 @@
+*.swp
+*~
+.DS_Store
+.Thumbs
+._*
+.idea
+bower_components
+gh-pages
+logs
+node_modules
+npm-debug.log*
